@@ -1,0 +1,20 @@
+.i-like-food {
+    background-image: url(../svg/i-like-food.svg);
+    background-color: rgba(245, 174, 111, 0.125);
+    background-repeat: repeat;
+    background-position: center;
+}
+
+.rovere-wood {
+    background-image: url(../img/rovere-wood-2.jpg);
+    background-size: 50%;
+    background-repeat: repeat;
+    background-position: center;
+}
+
+.black-paper {
+    background-image: url(../img/black-paper.jpg);
+    background-size: 20%;
+    background-repeat: repeat;
+    background-position: center;
+}
