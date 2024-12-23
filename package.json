@@ -1,6 +1,5 @@
 {
   "dependencies": {
-    "@vercel/edge-config": "^1.4.0",
     "@vercel/speed-insights": "^1.1.0"
   }
 }
