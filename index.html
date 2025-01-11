@@ -23,15 +23,11 @@
 
 <body class="black-paper">
 
-    <button class=" bg-light position-fixed d-none mt-3 ms-3 z-1 " type="button" data-bs-toggle="collapse"
-        data-bs-target="#navbarShow" aria-controls="navbarShow" aria-expanded="false" aria-label="Toggle navigation"
-        id="btnNavbar">
-        <span class="navbar-toggler-icon"></span>
-    </button>
+    
 
 
     <!--collapse navbar-collapse z-0        id="navbarShow"-->
-    <div class="px-auto py-2 rovere-wood   navbar-collapse rounded-bottom-4 sticky-top mb-5" id="navbarShow">
+    <div class="px-auto py-2 rovere-wood   navbar-collapse rounded-bottom-4 sticky-top mb-5" >
         <div class="container ">
             <nav class="navbar navbar-expand-lg bg-white rounded-4  py-3 i-like-food  ">
                 <div class="container-fluid">
@@ -81,7 +77,7 @@
             <div class="col-12 mt-3">
                 <video class="rounded-4" id="mioVideo" width="100%" loop autoplay muted disablePictureInPicture
                     controlsList="nodownload noplaybackrate">
-                    <source src="https://z14rq-my.sharepoint.com/personal/padoanlorenzo_z14rq_onmicrosoft_com/_layouts/15/download.aspx?share=EZxPLM1DRD9Ngair5Hrr6oMByQaoo0o2UJcxmnDgk8SwLQ
+                    <source src="https://z14rq-my.sharepoint.com/personal/padoanlorenzo_z14rq_onmicrosoft_com/_layouts/15/download.aspx?share=EbhHC9h03dtCk3KBxUxRBqIBU_jc_ZadQujIc8djDPCWRA
                     " type="video/mp4">
                     Il tuo browser non supporta il tag video.
                 </video>
@@ -103,42 +99,7 @@
     <br><br><br><br><br><br><br><br><br><br><b><br><br><br><br><br><br><br><br></b>
     <br><br><br><br><br><br><br><br><br><br><b><br><br><br><br><br><br><br><br></b>
 
-    <script>
-        document.addEventListener("DOMContentLoaded", () => {
-            const navbarContent = document.querySelector("#navbarShow");
-            const toggler = document.querySelector("#btnNavbar");
-            let lastScrollTop = 0;
-            let isToggling = false; // Stato per prevenire conflitti
-
-            // Funzione per simulare il clic del bottone
-            const toggleNavbar = () => {
-                if (!isToggling) {
-                    isToggling = true; // Blocca temporaneamente nuovi toggle
-                    toggler.click();
-                    setTimeout(() => (isToggling = false), 500); // Timeout per evitare conflitti (300ms corrisponde all'animazione di Bootstrap)
-                }
-            };
-
-            // Gestione dello scroll
-            window.addEventListener("scroll", () => {
-                const currentScroll = window.pageYOffset || document.documentElement.scrollTop;
-
-                if (currentScroll > lastScrollTop && navbarContent.classList.contains("show")) {
-                    // Scorrendo verso il basso e la navbar è visibile: nascondila
-                    toggleNavbar();
-                } else if (currentScroll < lastScrollTop && !navbarContent.classList.contains("show")) {
-                    // Scorrendo verso l'alto e la navbar è nascosta: mostrala
-                    toggleNavbar();
-                }
-
-                lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; // Evita valori negativi
-            });
-        });
-
-
-
-
-    </script>
+    
    
 </body>
 
