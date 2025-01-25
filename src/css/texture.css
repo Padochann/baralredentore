@@ -10,7 +10,7 @@
     background-size: 50%;
     background-repeat: repeat;
     background-position: center;
-    
+    transition: ease-in-out 5s; /* Transizione per il cambio di sfondo */
 }
 
 .black-paper {
