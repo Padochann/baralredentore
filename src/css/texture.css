@@ -10,7 +10,14 @@
     background-size: 50%;
     background-repeat: repeat;
     background-position: center;
-    transition: ease-in-out 5s; /* Transizione per il cambio di sfondo */
+    opacity: 0;
+    transform: translateY(-100px);
+    transition: opacity 0.5s ease, transform 1s ease;
+}
+
+.rovere-wood.visible {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .black-paper {

@@ -61,7 +61,7 @@
 
 
 
-        <div class="px-auto py-2 rovere-wood    rounded-bottom-4 sticky-top mb-5">
+        <div class="px-auto py-2 rovere-wood    rounded-bottom-4 sticky-top mb-5" >
             <div class="container">
                 <nav class="navbar navbar-expand-lg bg-white rounded-4  py-3 i-like-food" id="navbar">
 
@@ -273,9 +273,6 @@
             loader.style.display = "none"; // Nascondi il loader
             content.style.display = "block"; // Mostra il contenuto
 
-
-
-
             const scrollElement = document.querySelector('[data-bs-spy="scroll"]');
 
             if (scrollElement) {
@@ -286,6 +283,25 @@
             // Aggiorna lo ScrollSpy al resize della finestra
             window.addEventListener('resize', configureScrollSpy);
 
+
+
+
+        });
+
+
+
+    </script>
+
+    <script>
+        window.addEventListener("load", () => {
+            const elemento = document.querySelector(".rovere-wood");
+           
+
+           
+            console.log("Elemento trovato:", elemento);
+
+            
+            if (elemento) elemento.classList.add("visible");
         });
 
 
@@ -311,13 +327,23 @@
             scrollSpyInstance.refresh();
         }
 
+
         // Inizializza lo ScrollSpy quando la pagina è pronta
         document.addEventListener('DOMContentLoaded', () => {
-            
+            const scrollElement = document.querySelector('[data-bs-spy="scroll"]');
+
+            if (scrollElement) {
+                bootstrap.ScrollSpy.getOrCreateInstance(scrollElement);
+                configureScrollSpy(); // Configura il margine iniziale
+            }
+
+            // Aggiorna lo ScrollSpy al resize della finestra
+            window.addEventListener('resize', configureScrollSpy);
+
+
         });
 
-        
-    
+
 
 
     </script>
@@ -346,7 +372,7 @@
                 }
             };
 
- 
+
 
             // Event listeners per scroll e resize
             window.addEventListener("scroll", updateActiveLink);
