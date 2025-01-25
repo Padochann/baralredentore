@@ -17,33 +17,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
-
+    <style>
+        body {
+            display: none;
+        }
+    </style>
 
 </head>
 
 <body class="black-paper">
 
-    
 
+    <div class="px-auto py-2 rovere-wood    rounded-bottom-4 sticky-top mb-5">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg bg-white rounded-4  py-3 i-like-food" id="navbar">
 
-    <!--collapse navbar-collapse z-0        id="navbarShow"-->
-    <div class="px-auto py-2 rovere-wood   navbar-collapse rounded-bottom-4 sticky-top mb-5" >
-        <div class="container ">
-            <nav class="navbar navbar-expand-lg bg-white rounded-4  py-3 i-like-food  ">
                 <div class="container-fluid">
-                    <a class="navbar-brand" href="#">Navbar</a>
+                    <a class="navbar-brand nav-link " href="#scrollspyHeading1">Navbar</a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <ul class="navbar-nav nav-pills  me-auto mb-2 mb-lg-0">
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                                <a class="nav-link " href="#scrollspyHeading2">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Link</a>
+                                <a class="nav-link" href="#scrollspyHeading3">Link</a>
                             </li>
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
@@ -72,35 +74,237 @@
             </nav>
         </div>
     </div>
-    <div class="container mt-5 video">
-        <div class="row justify-content-center">
-            <div class="col-12 mt-3">
-                <video class="rounded-4" id="mioVideo" width="100%" loop autoplay muted disablePictureInPicture
-                    controlsList="nodownload noplaybackrate">
-                    <source src="https://z14rq-my.sharepoint.com/personal/padoanlorenzo_z14rq_onmicrosoft_com/_layouts/15/download.aspx?share=EbhHC9h03dtCk3KBxUxRBqIBU_jc_ZadQujIc8djDPCWRA
-                    " type="video/mp4">
-                    Il tuo browser non supporta il tag video.
-                </video>
 
+    <div data-bs-spy="scroll" data-bs-target="#navbar" data-bs-smooth-scroll="true" data-bs-root-margin="0px 0px 0%"
+        class="scrollspy-example " tabindex="0">
+
+
+        <section id="scrollspyHeading1">
+            <div class=" container mt-5 video">
+                <div class="row justify-content-center">
+                    <div class="col-12 mt-3">
+                        <video 
+                            class="rounded-4" 
+                            id="mioVideo" 
+                            width="100%" 
+                            loop 
+                            autoplay 
+                            muted 
+                            playsinline 
+                            disablePictureInPicture 
+                            controlsList="nodownload noplaybackrate">
+                            <source src="https://z14rq-my.sharepoint.com/personal/padoanlorenzo_z14rq_onmicrosoft_com/_layouts/15/download.aspx?share=EbhHC9h03dtCk3KBxUxRBqIBU_jc_ZadQujIc8djDPCWRA" type="video/mp4">
+                            Il tuo browser non supporta il tag video.
+                        </video>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="scrollspyHeading2" class="row">
+
+            <div class=" col-md-6 mt-5  text-white">
+                <span class="text-center">
+                    <h2 ><b>I nostri eventi</b></h2>
+
+                    <p>
+                        Qui di seguito troverai una lista di eventi in scorrimento automatico che potrebbero
+                        interessarti.
+                    </p>
+                </span>
+                <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner ">
+                        <div class="carousel-item active ">
+                            <div class="d-flex justify-content-center mx-5">
+
+                                <div class="card ">
+                                    <img src="..." class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">111111</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make
+                                            up
+                                            the bulk of the card's content.</p>
+                                    </div>
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item">An item</li>
+                                        <li class="list-group-item">A second item</li>
+                                        <li class="list-group-item">A third item</li>
+                                    </ul>
+                                    <div class="card-body">
+                                        <a href="#" class="card-link">Card link</a>
+                                        <a href="#" class="card-link">Another link</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item ">
+                            <div class="d-flex justify-content-center mx-5">
+
+                                <div class="card ">
+                                    <img src="..." class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">2222222</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make
+                                            up
+                                            the bulk of the card's content.</p>
+                                    </div>
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item">An item</li>
+                                        <li class="list-group-item">A second item</li>
+                                        <li class="list-group-item">A third item</li>
+                                    </ul>
+                                    <div class="card-body">
+                                        <a href="#" class="card-link">Card link</a>
+                                        <a href="#" class="card-link">Another link</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item ">
+                            <div class="d-flex justify-content-center mx-5">
+
+                                <div class="card ">
+                                    <img src="..." class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">333333</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make
+                                            up
+                                            the bulk of the card's content.</p>
+                                    </div>
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item">An item</li>
+                                        <li class="list-group-item">A second item</li>
+                                        <li class="list-group-item">A third item</li>
+                                    </ul>
+                                    <div class="card-body">
+                                        <a href="#" class="card-link">Card link</a>
+                                        <a href="#" class="card-link">Another link</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
 
             </div>
-        </div>
-    </div>
-    <br>
-    <br>
-    <br><br><br><br><br><br><br><br><br><br><b><br><br><br><br><br><br><br><br></b>
-    <br><br><br><br><br><br><br><br><br><br><b><br><br><br><br><br><br><br><br></b>
-    <br><br><br><br><br><br><br><br><br><br><b><br><br><br><br><br><br><br><br></b>
-    <br><br><br><br><br><br><br><br><br><br><b><br><br><br><br><br><br><br><br></b>
-    <br><br><br><br><br><br><br><br><br><br><b><br><br><br><br><br><br><br><br></b>
-    <br><br><br><br><br><br><br><br><br><br><b><br><br><br><br><br><br><br><br></b>
-    <br><br><br><br><br><br><br><br><br><br><b><br><br><br><br><br><br><br><br></b>
-    <br><br><br><br><br><br><br><br><br><br><b><br><br><br><br><br><br><br><br></b>
-    <br><br><br><br><br><br><br><br><br><br><b><br><br><br><br><br><br><br><br></b>
-    <br><br><br><br><br><br><br><br><br><br><b><br><br><br><br><br><br><br><br></b>
+            <br>
+            <br><br><br><br><br><br><br><br><br><br><b><br><br><br><br><br><br><br><br></b>
+            <br><br><br><br><br><br><br><br><br><br><b><br><br><br><br><br><br><br><br></b>
+            <br><br><br><br><br><br><br><br><br><br><b><br><br><br><br><br><br><br><br></b>
+            <br><br><br><br><br><br><br><br><br><br><b><br><br><br><br><br><br><br><br></b>
+            <br><br><br><br><br><br><br><br><br>
+        </section>
+        
+        <section id="scrollspyHeading3">
 
+            <div >
+                sds
+            </div>
+            <br><b><br><br><br><br><br><br><br><br></b>
+            <br><br><br><br><br><br><br><br><br><br><b><br><br><br><br><br><br><br><br></b>
+            <br><br><br><br><br><br><br><br><br><br><b><br><br><br><br><br><br><br><br></b>
+            <br><br><br><br><br><br><br><br><br><br><b><br><br><br><br><br><br><br><br></b>
+            <br><br><br><br><br><br><br><br><br><br><b><br><br><br><br><br><br><br><br></b>
+            <br><br><br><br><br><br><br><br><br><br><b><br><br><br><br><br><br><br><br></b>
     
-   
+            <br>
+            <br><br><br><br><br><br><br><br><br><br><b><br><br><br><br><br><br><br><br></b>
+            <br><br><br><br><br><br><br><br><br><br><b><br><br><br><br><br><br><br><br></b>
+            <br><br><br><br><br><br><br><br><br><br><b><br><br><br><br><br><br><br><br></b>
+            <br><br><br><br><br><br><br><br><br><br><b><br><br><br><br><br><br><br><br></b>
+            <br><br><br><br><br><br><br><br><br><br><b><br><br><br><br><br><br><br><br></b>
+            <br><br><br><br><br><br><br><br><br><br><b><br><br><br><br><br><br><br><br></b>
+            <br><br><br><br><br><br><br><br><br><br><b><br><br><br><br><br><br><br><br></b>
+            <br><br><br><br><br><br><br><br><br><br><b><br><br><br><br><br><br><br><br></b>
+            <br><br><br><br><br><br><br><br><br><br><b><br><br><br><br><br><br><br><br></b>
+            <br><br><br><br><br><br><br><br><br><br><b><br><br><br><br><br><br><br><br></b>
+        </section>
+    </div>
+
+
+    <script>
+        window.addEventListener("load", () => {
+            document.body.style.display = "block";
+        });
+    </script>
+
+    <script type="text/javascript" async>
+        // Funzione per configurare e aggiornare lo ScrollSpy in base alla dimensione dello schermo
+        function configureScrollSpy() {
+          const scrollElement = document.querySelector('[data-bs-spy="scroll"]');
+      
+          if (!scrollElement) return; // Se non esiste l'elemento con data-bs-spy="scroll", esci
+      
+          // Configura root margin per dispositivi mobili e desktop
+          if (window.innerWidth < 768) {
+            scrollElement.setAttribute('data-bs-root-margin', '0px 0px -75%'); // Margine più permissivo per il mobile
+          } else {
+            scrollElement.setAttribute('data-bs-root-margin', '0px 0px 0%'); // Margine più stretto per il desktop
+          }
+      
+          // Riattiva lo ScrollSpy
+          const scrollSpyInstance = bootstrap.ScrollSpy.getOrCreateInstance(scrollElement);
+          scrollSpyInstance.refresh();
+        }
+      
+        // Inizializza lo ScrollSpy quando la pagina è pronta
+        document.addEventListener('DOMContentLoaded', () => {
+          const scrollElement = document.querySelector('[data-bs-spy="scroll"]');
+      
+          if (scrollElement) {
+            bootstrap.ScrollSpy.getOrCreateInstance(scrollElement);
+            configureScrollSpy(); // Configura il margine iniziale
+          }
+      
+          // Aggiorna lo ScrollSpy al resize della finestra
+          window.addEventListener('resize', configureScrollSpy);
+        });
+      </script>
+      <script>
+        document.addEventListener("DOMContentLoaded", () => {
+          const sections = document.querySelectorAll("section[id]");
+          const navLinks = document.querySelectorAll(".navbar .nav-link");//il querySelectorAll seleziona tutti gli elementi con la classe nav-link all'interno della classe navbar
+      
+          // Funzione per aggiornare gli "active" sui link
+          const updateActiveLink = () => {
+            let index = -1;
+      
+            sections.forEach((section, i) => {
+              const rect = section.getBoundingClientRect();
+              if (rect.top >= 0 && rect.top < window.innerHeight / 2) {
+                index = i; // La sezione più visibile nella parte superiore del viewport
+              }
+            });
+      
+            // Aggiorna i link della navbar
+            navLinks.forEach((link) => link.classList.remove("active"));
+            if (index !== -1) {
+              navLinks[index].classList.add("active");
+            }
+          };
+      
+          // Event listeners per scroll e resize
+          window.addEventListener("scroll", updateActiveLink);
+          window.addEventListener("resize", updateActiveLink);
+      
+          // Esegui l'aggiornamento iniziale
+          updateActiveLink();
+        });
+      </script>
+      
+      
+
 </body>
 
 </html>
