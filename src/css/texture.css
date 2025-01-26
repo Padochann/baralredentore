@@ -31,3 +31,62 @@
     background-position: center;
 }
 
+
+ .nav-item .active{
+    background-color: rgba(238, 165, 83, 0.466);
+    
+
+    
+}
+
+.bk-shade {
+    background-color: rgba(0, 0, 0, 0.61);
+    
+    
+}
+
+section.orange {
+    background-color: rgba(245, 174, 111, 0.125);
+    background-image: url(../svg/i-like-food.svg);
+    background-repeat: repeat;
+    background-position: center;
+   
+}
+
+/* Stile generale per il contenitore */
+#DSC_9544_01 {
+    position: relative; /* Necessario per il posizionamento assoluto dello sfondo */
+    
+    overflow: hidden; /* Per evitare che il contenuto esca dai bordi */
+}
+
+/* Pseudo-elemento per lo sfondo sfocato */
+#DSC_9544_01::before {
+    content: ""; /* Genera il livello visivo */
+    position: absolute;
+    top: 0;
+    left: 12;
+    width: calc(100% - 25px);
+    height: 100%;
+    border-radius: 15px;
+    background-image: url(../img/DSC_9544_01.jpg); /* L'immagine di sfondo */
+    background-size: cover; /* Mantiene l'aspect ratio */
+    background-position: center; /* Centra l'immagine */
+    background-repeat: no-repeat; /* Evita ripetizioni */
+    filter: blur(2px); /* Applica la sfocatura */
+    z-index: 0; /* Mette lo sfondo dietro */
+    
+   
+}
+
+/* Stile del contenuto */
+#DSC_9544_01 .content {
+    position: relative; /* Mantiene il contenuto sopra lo sfondo */
+    z-index: 2; /* Assicura che sia sopra allo sfondo sfocato */
+    text-shadow: 
+        -1px -1px 0 #000000, /* Ombra in alto a sinistra */
+        1px -1px 0 #000,  /* Ombra in alto a destra */
+        -1px 1px 0 #000,  /* Ombra in basso a sinistra */
+        1px 1px 0 #000; 
+}
+

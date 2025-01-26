@@ -1,72 +1,64 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
 <head>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="src/css/texture.css">
-    <link rel="stylesheet" href="src/css/test.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Sfondo Blurrato</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial, sans-serif;
+            overflow: hidden;
+        }
+
+        .container {
+            position: relative;
+            width: 100%;
+            height: 100%;
+        }
+
+        .container::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url(/src/img/DSC_9544_01.JPG); /* Cambia con il tuo percorso */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            filter: blur(10px); /* Aggiunge la sfocatura */
+            z-index: -1; /* Porta il background dietro il contenuto */
+        }
+
+        .content {
+            position: relative;
+            text-align: center;
+            color: white;
+            z-index: 1; /* Assicura che il contenuto sia sopra lo sfondo */
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin: 0;
+        }
+
+        p {
+            font-size: 1.5rem;
+        }
+    </style>
 </head>
 <body>
-    <nav id="navbar-example2" class="navbar bg-body-tertiary px-3 mb-3 fixed-top">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <ul class="nav nav-pills">
-          <li class="nav-item">
-            <a class="nav-link" href="#scrollspyHeading1">First</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#scrollspyHeading2">Second</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Dropdown</a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#scrollspyHeading3">Third</a></li>
-              <li><a class="dropdown-item" href="#scrollspyHeading4">Fourth</a></li>
-              <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item" href="#scrollspyHeading5">Fifth</a></li>
-            </ul>
-          </li>
-        </ul>
-      </nav>
-
-      <div class="row">
-        <div class="col-md-6 bg-primary">lorem ipsum 
-          dolor sit amet consectetur adipisicing elit. Ut perferendis consectetur ratione nesciunt ipsam quaerat libero eligendi quidem aut, incidunt exercitationem dignissimos cumque ab distinctio nemo, adipisci est repellendus deserunt.
+    <div class="container">
+        <div class="content">
+            <h1>Solo Sfondo Sfocato</h1>
+            <p>Il contenuto rimane nitido!</p>
         </div>
-        <div class="col-md-3 bg-black">lorem ipsum 
-          dolor sit amet consectetur adipisicing elit. Ut perferendis consectetur ratione nesciunt ipsam quaerat libero eligendi quidem aut, incidunt exercitationem dignissimos cumque ab distinctio nemo, adipisci est repellendus deserunt.
-        </div>
-        <div class="col-md-3 bg-primary">lorem ipsum 
-          dolor sit amet consectetur adipisicing elit. Ut perferendis consectetur ratione nesciunt ipsam quaerat libero eligendi quidem aut, incidunt exercitationem dignissimos cumque ab distinctio nemo, adipisci est repellendus deserunt.
-      </div>
-      
-      <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="scrollspy-example bg-body-tertiary p-3 rounded-2" tabindex="0">
-        <h4 id="scrollspyHeading1">First heading</h4>
-        <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut perferendis consectetur ratione nesciunt ipsam quaerat libero eligendi quidem aut, incidunt exercitationem dignissimos cumque ab distinctio nemo, adipisci est repellendus deserunt.   
-
-
-        </p>
-        <h4 id="scrollspyHeading2">Second heading</h4>
-        <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit . Ut perferendis consectetur ratione nesciunt ipsam quaerat libero eligendi quidem aut, incidunt exercitationem dignissimos cumque ab distinctio nemo, adipisci est repellendus deserunt.
-        </p>
-        <h4 id="scrollspyHeading3">Third heading</h4>
-        <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit . Ut perferendis consectetur ratione nesciunt ipsam quaerat libero eligendi quidem aut, incidunt exercitationem dignissimos cumque ab distinctio nemo, adipisci est repellendus deserunt.
-        </p>
-        <h4 id="scrollspyHeading4">Fourth heading</h4>
-        <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit . Ut perferendis consectetur ratione nesciunt ipsam quaerat libero eligendi quidem aut, incidunt exercitationem dignissimos cumque ab distinctio nemo, adipisci est repellendus deserunt.
-        </p>
-        <h4 id="scrollspyHeading5">Fifth heading</h4>
-        <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit . Ut perferendis consectetur ratione nesciunt ipsam quaerat libero eligendi quidem aut, incidunt exercitationem dignissimos cumque ab distinctio nemo, adipisci est repellendus deserunt.
-        </p>
-      </div>
+    </div>
 </body>
 </html>

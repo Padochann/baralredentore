@@ -8,10 +8,17 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
+
     <link rel="preload" href="src/css/texture.css" as="style" />
     <link rel="preload" href="src/img/rovere-wood-2.jpg" as="image" />
     <link rel="stylesheet" href="src/css/texture.css">
     <link rel="stylesheet" href="src/css/test.css">
+    <link rel="stylesheet" href="src/css/font.css">
     <link rel="preload"
         href="https://z14rq-my.sharepoint.com/personal/padoanlorenzo_z14rq_onmicrosoft_com/_layouts/15/download.aspx?share=EbhHC9h03dtCk3KBxUxRBqIBU_jc_ZadQujIc8djDPCWRA"
         as="video">
@@ -49,7 +56,7 @@
 
 </head>
 
-<body>
+<body class="nunito-default">
 
     <!-- Schermata di caricamento -->
     <div id="loader">
@@ -65,27 +72,28 @@
 
 
 
-        <div class="px-auto py-2 rovere-wood    rounded-bottom-4 sticky-top mb-5" >
+        <div class="px-auto py-2 rovere-wood    rounded-bottom-4 sticky-top mb-5">
             <div class="container">
                 <nav class="navbar navbar-expand-lg bg-white rounded-4  py-1 i-like-food" id="navbar">
 
                     <div class="container-fluid">
                         <a class="nav-link navbar-brand" href="#scrollspyHeading1">
-                            <img src="src/img/LOGO.png" alt="logo" class="w-100 img-thumbnail rounded-4" style="pointer-events: none;">
+                            <img src="src/img/LOGO.png" alt="logo" class="w-100 img-thumbnail rounded-4"
+                                style="pointer-events: none;">
                         </a>
-                        
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+
+                        <button class="navbar-toggler my-auto mb-2" type="button" data-bs-toggle="collapse"
                             data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                             aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
                         </button>
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                            <ul class="navbar-nav nav-pills  me-auto mb-2 mb-lg-0">
-                                <li class="nav-item">
-                                    <a class="nav-link " href="#scrollspyHeading2">Home</a>
+                            <ul class="navbar-nav  nunito-400  me-auto mb-2 mb-lg-0">
+                                <li class="nav-item ">
+                                    <a class="nav-link rounded-3" href="#scrollspyHeading2">Eventi</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#scrollspyHeading3">Link</a>
+                                    <a class="nav-link rounded-3" href="#scrollspyHeading3">Menu</a>
                                 </li>
                                 <li class="nav-item dropdown">
                                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
@@ -93,16 +101,16 @@
                                         Dropdown
                                     </a>
                                     <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="#">Action</a></li>
-                                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                                        <li><a class="dropdown-item rounded-3" href="#">Action</a></li>
+                                        <li><a class="dropdown-item rounded-3" href="#">Another action</a></li>
                                         <li>
                                             <hr class="dropdown-divider">
                                         </li>
-                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                        <li><a class="dropdown-item rounded-3" href="#">Something else here</a></li>
                                     </ul>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                                    <a class="nav-link disabled rounded-3" aria-disabled="true">Disabled</a>
                                 </li>
                             </ul>
                             <form class="d-flex" role="search">
@@ -136,116 +144,129 @@
                 </div>
             </section>
 
-            <section id="scrollspyHeading2" class="container-fluid">
-                
+            <section id="scrollspyHeading2" class="container-fluid orange rounded-4 mt-5 py-2">
+
                 <div class="row">
 
-                
-                <div class="col-md-6  mt-5  text-white">
-                    <span class="text-center">
-                        <h2><b>I nostri eventi</b></h2>
+                    <div class="col-md-6 d-flex rounded-2 text-white" id="DSC_9544_01">
+                        <div class=" text-center  d-flex align-items-center rounded-3">
+                            <div class="content">
+                                <h1><b>Organizza i <u><i>TUOI</i></u> eventi memorabili e incontri privati nel nostro spazio versatile. <br><br> Che
+                                        si tratti di una festa di compleanno, un evento aziendale o un'occasione
+                                        speciale, la nostra cantina offre l'ambiente ideale per socializzare e goderti
+                                        ottimo vino e cibo.</b></h1>
 
-                        <p>
-                            Qui di seguito troverai una lista di eventi in scorrimento automatico che potrebbero
-                            interessarti.
-                        </p>
-                    </span>
-
-                    
-                    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-                        <div class="carousel-inner ">
-                            <div class="carousel-item active ">
-                                <div class="d-flex justify-content-center mx-5">
-
-                                    <div class="card mx-xxl-5 mx-xl-3 mx-lg-2 mx-md-1 mx-sm-3 mx-0">
-                                        <img src="..." class="card-img-top" alt="...">
-                                        <div class="card-body">
-                                            <h5 class="card-title">111111</h5>
-                                            <p class="card-text">Some quick example text to build on the card title and
-                                                make
-                                                up
-                                                the bulk of the card's content.</p>
-                                        </div>
-                                        <ul class="list-group list-group-flush">
-                                            <li class="list-group-item">An item</li>
-                                            <li class="list-group-item">A second item</li>
-                                            <li class="list-group-item">A third item</li>
-                                        </ul>
-                                        <div class="card-body">
-                                            <a href="#" class="card-link">Card link</a>
-                                            <a href="#" class="card-link">Another link</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="carousel-item ">
-                                <div class="d-flex justify-content-center mx-5">
-
-                                    <div class="card mx-xxl-5 mx-xl-3 mx-lg-2 mx-md-1 mx-sm-3 mx-0">
-                                        <img src="..." class="card-img-top" alt="...">
-                                        <div class="card-body">
-                                            <h5 class="card-title">2222222</h5>
-                                            <p class="card-text">Some quick example text to build on the card title and
-                                                make
-                                                up
-                                                the bulk of the card's content.</p>
-                                        </div>
-                                        <ul class="list-group list-group-flush">
-                                            <li class="list-group-item">An item</li>
-                                            <li class="list-group-item">A second item</li>
-                                            <li class="list-group-item">A third item</li>
-                                        </ul>
-                                        <div class="card-body">
-                                            <a href="#" class="card-link">Card link</a>
-                                            <a href="#" class="card-link">Another link</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="carousel-item ">
-                                <div class="d-flex justify-content-center mx-5">
-
-                                    <div class="card mx-xxl-5 mx-xl-3 mx-lg-2 mx-md-1 mx-sm-3 mx-0">
-                                        <img src="..." class="card-img-top" alt="...">
-                                        <div class="card-body">
-                                            <h5 class="card-title">333333</h5>
-                                            <p class="card-text">Some quick example text to build on the card title and
-                                                make
-                                                up
-                                                the bulk of the card's content.</p>
-                                        </div>
-                                        <ul class="list-group list-group-flush">
-                                            <li class="list-group-item">An item</li>
-                                            <li class="list-group-item">A second item</li>
-                                            <li class="list-group-item">A third item</li>
-                                        </ul>
-                                        <div class="card-body">
-                                            <a href="#" class="card-link">Card link</a>
-                                            <a href="#" class="card-link">Another link</a>
-                                        </div>
-                                    </div>
-                                </div>
                             </div>
                         </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
-                            data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
-                            data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Next</span>
-                        </button>
                     </div>
 
+
+
+                    <div class="col-md-6  text-white">
+                        <div class="bk-shade my-2 rounded-3">
+                            <span class="text-center ">
+                                <h2><b>I nostri eventi</b></h2>
+
+                                <p>
+                                    Qui di seguito troverai una lista di eventi in scorrimento automatico che potrebbero
+                                    interessarti.
+                                </p>
+                            </span>
+                        </div>
+
+                        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner ">
+                                <div class="carousel-item active ">
+                                    <div class="d-flex justify-content-center mx-5">
+
+                                        <div class="card mx-xxl-5 mx-xl-3 mx-lg-2 mx-md-1 mx-sm-3 mx-0">
+                                            <img src="src/img/natale.png" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                                <h5 class="card-title">111111</h5>
+                                                <p class="card-text">Some quick example text to build on the card title
+                                                    and
+                                                    make
+                                                    up
+                                                    the bulk of the card's content.</p>
+                                            </div>
+                                            <ul class="list-group list-group-flush">
+                                                <li class="list-group-item">An item</li>
+                                                <li class="list-group-item">A second item</li>
+                                                <li class="list-group-item">A third item</li>
+                                            </ul>
+                                            <div class="card-body">
+                                                <a href="#" class="card-link">Card link</a>
+                                                <a href="#" class="card-link">Another link</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item ">
+                                    <div class="d-flex justify-content-center mx-5">
+
+                                        <div class="card mx-xxl-5 mx-xl-3 mx-lg-2 mx-md-1 mx-sm-3 mx-0">
+                                            <img src="src/img/carnevale.png" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                                <h5 class="card-title">2222222</h5>
+                                                <p class="card-text">Some quick example text to build on the card title
+                                                    and
+                                                    make
+                                                    up
+                                                    the bulk of the card's content.</p>
+                                            </div>
+                                            <ul class="list-group list-group-flush">
+                                                <li class="list-group-item">An item</li>
+                                                <li class="list-group-item">A second item</li>
+                                                <li class="list-group-item">A third item</li>
+                                            </ul>
+                                            <div class="card-body">
+                                                <a href="#" class="card-link">Card link</a>
+                                                <a href="#" class="card-link">Another link</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item ">
+                                    <div class="d-flex justify-content-center mx-5">
+
+                                        <div class="card mx-xxl-5 mx-xl-3 mx-lg-2 mx-md-1 mx-sm-3 mx-0">
+                                            <img src="src/img/carnevale.png" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                                <h5 class="card-title">333333</h5>
+                                                <p class="card-text">Some quick example text to build on the card title
+                                                    and
+                                                    make
+                                                    up
+                                                    the bulk of the card's content.</p>
+                                            </div>
+                                            <ul class="list-group list-group-flush">
+                                                <li class="list-group-item">An item</li>
+                                                <li class="list-group-item">A second item</li>
+                                                <li class="list-group-item">A third item</li>
+                                            </ul>
+                                            <div class="card-body">
+                                                <a href="#" class="card-link">Card link</a>
+                                                <a href="#" class="card-link">Another link</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button"
+                                data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button"
+                                data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+
+                    </div>
                 </div>
-            </div>
-            <br><br><br /> <br><br><br /> <br><br><br /> <br><br><br /> <br><br><br /> <br><br><br /> <br><br><br />
-                <br><br><br /> <br><br><br /> <br><br><br /> <br><br><br /> <br><br><br /> <br><br><br /> <br><br><br />
-                <br><br><br /> <br><br><br /> <br><br><br /> <br><br><br /> <br><br><br /> <br><br><br /> <br><br><br />
-                <br><br><br /> <br><br><br /> <br><br><br /> <br><br><br /> <br><br><br /> <br><br><br /> <br><br><br />
-            
+
             </section>
 
             <section id="scrollspyHeading3">
@@ -254,8 +275,8 @@
                 <br><br><br /> <br><br><br /> <br><br><br /> <br><br><br /> <br><br><br /> <br><br><br /> <br><br><br />
                 <br><br><br /> <br><br><br /> <br><br><br /> <br><br><br /> <br><br><br /> <br><br><br /> <br><br><br />
             </section>
-            
-        
+
+
         </div>
 
     </div>
@@ -291,12 +312,12 @@
     <script>
         window.addEventListener("load", () => {
             const elemento = document.querySelector(".rovere-wood");
-           
 
-           
+
+
             console.log("Elemento trovato:", elemento);
 
-            
+
             if (elemento) elemento.classList.add("visible");
         });
 
