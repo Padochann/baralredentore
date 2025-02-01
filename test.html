@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="it">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sfondo Blurrato</title>
+    <title>Club Sandwich menu</title>
     <style>
         body {
             margin: 0;
@@ -28,19 +29,23 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background-image: url(/src/img/DSC_9544_01.JPG); /* Cambia con il tuo percorso */
+            background-image: url(/src/img/DSC_9544_01.JPG);
+            /* Cambia con il tuo percorso */
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
-            filter: blur(10px); /* Aggiunge la sfocatura */
-            z-index: -1; /* Porta il background dietro il contenuto */
+            filter: blur(10px);
+            /* Aggiunge la sfocatura */
+            z-index: -1;
+            /* Porta il background dietro il contenuto */
         }
 
         .content {
             position: relative;
             text-align: center;
             color: white;
-            z-index: 1; /* Assicura che il contenuto sia sopra lo sfondo */
+            z-index: 1;
+            /* Assicura che il contenuto sia sopra lo sfondo */
         }
 
         h1 {
@@ -53,12 +58,14 @@
         }
     </style>
 </head>
+
 <body>
     <div class="container">
-        <div class="content">
-            <h1>Solo Sfondo Sfocato</h1>
-            <p>Il contenuto rimane nitido!</p>
+        <div class="content text-border">
+            <h1>I nostri <b>CLUB SANDWICH</b></h1>
+            <p>CLUB CON FOTO, INGREDIENTI E PREZZO</p>
         </div>
     </div>
 </body>
+
 </html>

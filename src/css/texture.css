@@ -54,14 +54,13 @@ section.orange {
 }
 
 /* Stile generale per il contenitore */
-#DSC_9544_01 {
+.DSC-bg {
     position: relative; /* Necessario per il posizionamento assoluto dello sfondo */
     
     overflow: hidden; /* Per evitare che il contenuto esca dai bordi */
 }
-
 /* Pseudo-elemento per lo sfondo sfocato */
-#DSC_9544_01::before {
+.DSC-bg::before {
     content: ""; /* Genera il livello visivo */
     position: absolute;
     top: 0;
@@ -69,7 +68,7 @@ section.orange {
     width: calc(100% - 25px);
     height: 100%;
     border-radius: 15px;
-    background-image: url(../img/DSC_9544_01.jpg); /* L'immagine di sfondo */
+     /* L'immagine di sfondo */
     background-size: cover; /* Mantiene l'aspect ratio */
     background-position: center; /* Centra l'immagine */
     background-repeat: no-repeat; /* Evita ripetizioni */
@@ -78,15 +77,25 @@ section.orange {
     
    
 }
-
 /* Stile del contenuto */
-#DSC_9544_01 .content {
+.DSC-bg .content {
     position: relative; /* Mantiene il contenuto sopra lo sfondo */
     z-index: 2; /* Assicura che sia sopra allo sfondo sfocato */
-    text-shadow: 
-        -1px -1px 0 #000000, /* Ombra in alto a sinistra */
-        1px -1px 0 #000,  /* Ombra in alto a destra */
-        -1px 1px 0 #000,  /* Ombra in basso a sinistra */
-        1px 1px 0 #000; 
+    
 }
 
+#DSC_9544_01::before{
+    background-image: url(../img/DSC_9544_01.jpg);
+}
+
+
+.card-bg{
+    background-image: url(../img/DSC_9927.JPG);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 15px;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+}
