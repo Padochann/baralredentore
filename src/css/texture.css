@@ -69,7 +69,7 @@ section.orange {
     width: calc(100% - 25px);
     height: 100%;
     border-radius: 15px;
-    background-image: url(../img/bar.jpg); /* L'immagine di sfondo */
+    background-image: url(../img/DSC_9544_01.jpg); /* L'immagine di sfondo */
     background-size: cover; /* Mantiene l'aspect ratio */
     background-position: center; /* Centra l'immagine */
     background-repeat: no-repeat; /* Evita ripetizioni */
