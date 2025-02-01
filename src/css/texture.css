@@ -90,7 +90,6 @@ section.orange {
 
 
 .card-bg{
-    background-image: url(../img/DSC_9927.JPG);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -99,3 +98,113 @@ section.orange {
     position: relative;
     z-index: 1;
 }
+
+
+.black{
+    background-color: black;
+}
+
+.white{
+    background-color: white;
+}
+
+.red{
+    background-color: red;
+}
+
+.blue{
+    background-color: blue;
+}
+
+.green{
+    background-color: green;
+}
+
+.yellow{
+    background-color: yellow;
+}
+
+.orange{
+    background-color: orange;
+}
+
+.purple{
+    background-color: purple;
+}
+
+.pink{
+    background-color: pink;
+}
+
+.brown{
+    background-color: brown;
+}
+.grey{
+    background-color: grey;
+}
+
+.lightblue{
+    background-color: lightblue;
+}
+
+.lightgreen{
+    background-color: lightgreen;
+}
+
+.lightyellow{
+    background-color: lightyellow;
+}
+
+.lightorange{
+    background-color: lightorange;
+}
+
+.lightpurple{
+    background-color: lightpurple;
+}
+
+.lightpink{
+    background-color: lightpink;
+}
+
+.lightbrown{
+    background-color: lightbrown;
+}
+
+.lightgrey{
+    background-color: lightgrey;
+}
+
+.darkblue{
+    background-color: darkblue;
+}
+
+.darkgreen{
+    background-color: darkgreen;
+}
+
+.darkyellow{
+    background-color: darkyellow;
+}
+
+.darkorange{
+    background-color: darkorange;
+}
+
+.darkpurple{
+    background-color: darkpurple;
+}
+
+.darkpink{
+    background-color: darkpink;
+}
+
+.darkbrown{
+    background-color: darkbrown;
+}
+
+.darkgrey{
+    background-color: darkgrey;
+}
+
+
